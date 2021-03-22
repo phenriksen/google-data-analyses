@@ -96,8 +96,27 @@ begin_ts = date_ymd_to_timestamp_ms(2018,9,1)
 end_ts = date_ymd_to_timestamp_ms(2018,9,30)
 # end_ts = timestampMs[-1]    # Last one
 
-# Point of interest
-poi = np.array([45.773944,4.890715])    # in degrees
+# Point of interest - locate on google maps, right the red pin, and copy the location from the top of the dialog box.
+# Commentor Glostrup
+# poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
+
+# Commentor Aalborg
+# poi = np.array([57.03752878803988, 9.933233418162803])    # in degrees
+
+# Synoptik Herlev
+# 55.71621271226183, 12.436419077948626
+# poi = np.array([55.71621271226183, 12.436419077948626])    # in degrees
+
+# Pensiondanmark Langelinje
+# 55.70106618553776, 12.60012219232154
+#poi = np.array([55.70106618553776, 12.60012219232154])    # in degrees
+
+# Comwell Kellers Park
+# 55.671589807072856, 9.683122286593909
+#poi = np.array([55.671589807072856, 9.683122286593909])    # in degrees
+
+# Original POI
+# poi = np.array([45.773944,4.890715])    # in degrees
 radius_max = 50                         # in meters
 
 # Define the interval of time below which timestamps should be grouped together
