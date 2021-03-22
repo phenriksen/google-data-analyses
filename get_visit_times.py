@@ -92,13 +92,13 @@ main_dict.clear()
 #############
 
 # Get first and last timestamps of interest
-begin_ts = date_ymd_to_timestamp_ms(2020,2,1)
-end_ts = date_ymd_to_timestamp_ms(2020,2,28)
+begin_ts = date_ymd_to_timestamp_ms(2020,1,1)
+end_ts = date_ymd_to_timestamp_ms(2020,12,31)
 # end_ts = timestampMs[-1]    # Last one
 
-# Point of interest - locate on google maps, right the red pin, and copy the location from the top of the dialog box.
+# Point of interest - locate on google maps, rightclick the red pin, and copy the location from the top of the dialog box.
 # Commentor Glostrup
-poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
+# poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
 
 # Commentor Aalborg
 # poi = np.array([57.03752878803988, 9.933233418162803])    # in degrees
@@ -115,12 +115,17 @@ poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
 # 55.671589807072856, 9.683122286593909
 #poi = np.array([55.671589807072856, 9.683122286593909])    # in degrees
 
+# William Cook Europe
+# 55.462565370141895, 12.036672447298251
+poi = np.array([55.462565370141895, 12.036672447298251])    # in degrees
+
+
 # Original POI
 # poi = np.array([45.773944,4.890715])    # in degrees
 radius_max = 125                         # in meters
 
 # Define the interval of time below which timestamps should be grouped together
-group_size = datetime.timedelta(weeks=0, days=0, hours=1, minutes=0, seconds=0, milliseconds=0)
+group_size = datetime.timedelta(weeks=0, days=1, hours=0, minutes=0, seconds=0, milliseconds=0)
 # Amount of info to show about each group:
 # 0: None
 # 1: Number of points in group
