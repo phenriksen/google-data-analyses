@@ -41,7 +41,7 @@ def dist_btw_two_points(p1,p2):
 
 # LOAD DATA
 
-json_file = "location_history.json"
+json_file = "data\Location History.json"
 # Read the file
 print("Loading '%s' ..."%json_file)
 main_dict = json.load(open(json_file))   # This can take a bit of time
@@ -92,13 +92,13 @@ main_dict.clear()
 #############
 
 # Get first and last timestamps of interest
-begin_ts = date_ymd_to_timestamp_ms(2018,9,1)
-end_ts = date_ymd_to_timestamp_ms(2018,9,30)
+begin_ts = date_ymd_to_timestamp_ms(2020,2,1)
+end_ts = date_ymd_to_timestamp_ms(2020,2,28)
 # end_ts = timestampMs[-1]    # Last one
 
 # Point of interest - locate on google maps, right the red pin, and copy the location from the top of the dialog box.
 # Commentor Glostrup
-# poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
+poi = np.array([55.69739129536799, 12.416449750122991])    # in degrees
 
 # Commentor Aalborg
 # poi = np.array([57.03752878803988, 9.933233418162803])    # in degrees
@@ -117,7 +117,7 @@ end_ts = date_ymd_to_timestamp_ms(2018,9,30)
 
 # Original POI
 # poi = np.array([45.773944,4.890715])    # in degrees
-radius_max = 50                         # in meters
+radius_max = 125                         # in meters
 
 # Define the interval of time below which timestamps should be grouped together
 group_size = datetime.timedelta(weeks=0, days=0, hours=1, minutes=0, seconds=0, milliseconds=0)
