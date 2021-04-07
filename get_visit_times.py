@@ -124,7 +124,7 @@ poi = np.array([55.462565370141895, 12.036672447298251])    # in degrees
 
 # Original POI
 # poi = np.array([45.773944,4.890715])    # in degrees
-radius_max = 125                          # in meters - I have adjusted this, since GPS is not veryaccurate and sometimes google fixates me as being at the company next door (more than 50 meters away)
+radius_max = 125                          # in meters - I have adjusted this, since GPS is not very accurate and sometimes google fixates me as being at the company next door (more than 50 meters away)
 
 # Define the interval of time below which timestamps should be grouped together
 group_size = datetime.timedelta(weeks=0, days=1, hours=0, minutes=0, seconds=0, milliseconds=0)
