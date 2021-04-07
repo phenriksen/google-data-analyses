@@ -41,7 +41,7 @@ def dist_btw_two_points(p1,p2):
 
 # LOAD DATA
 
-json_file = "data\Location History.json"
+json_file = "data/Location History.json"
 # Read the file
 print("Loading '%s' ..."%json_file)
 main_dict = json.load(open(json_file))   # This can take a bit of time
@@ -115,11 +115,11 @@ end_ts = date_ymd_to_timestamp_ms(2020,12,31)
 
 # Comwell Kellers Park
 # 55.671214622700624, 9.68297593429653
-poi = np.array([55.671214622700624, 9.68297593429653])    # in degrees
+# poi = np.array([55.671214622700624, 9.68297593429653])    # in degrees
 
 # William Cook Europe
 # 55.462565370141895, 12.036672447298251
-# poi = np.array([55.462565370141895, 12.036672447298251])    # in degrees
+poi = np.array([55.462565370141895, 12.036672447298251])    # in degrees
 
 
 # Original POI
